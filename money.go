@@ -5,24 +5,21 @@ import (
     "golang.org/x/text/message"
 	"fmt"
 )
-func format_money(pennies int) {
-	// var cents int
-	var dollars int
-
-	fmt.Printf("Format %d as a currency value\n",pennies)
+func format_money(pennies int) string {
 
 	cents := pennies % 100
-	dollars = pennies / 100
-	fmt.Printf("dollars = %d , cents = %d\n",dollars,cents)
-		fmt.Printf("%s","$")
+	dollars := pennies / 100
 	p := message.NewPrinter(language.English)
-	p.Printf("%d",dollars)
-	fmt.Printf("%s%02d\n",".",cents)
+	
+	dol_value := p.Sprintf("%d",dollars)
+	result := fmt.Sprintf("$%s%s%02d\n",dol_value,".",cents)
 
-	return
+	return(result)
 } // format_money
 
 func main() {
 
-	format_money(150075)  // $1,500.75
+	value := 150075
+	result := format_money(value)  // $1,500.75
+	fmt.Printf("\nThe formatted money value of %d = %s\n",value,result)
 }
