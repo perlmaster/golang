@@ -12,7 +12,7 @@ func format_money(pennies int) string {
 	p := message.NewPrinter(language.English)
 	
 	dol_value := p.Sprintf("%d",dollars)
-	result := fmt.Sprintf("$%s%s%02d\n",dol_value,".",cents)
+	result := fmt.Sprintf("$%s%s%02d",dol_value,".",cents)
 
 	return(result)
 } // format_money
