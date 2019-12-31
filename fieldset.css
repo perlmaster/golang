@@ -1,0 +1,116 @@
+/********************************************************************/
+/*                                                                  */
+/* File      : fieldset.css                                         */
+/*                                                                  */
+/* Author    : Barry Kimelman                                       */
+/*                                                                  */
+/* Created   : June 16, 2012                                        */
+/*                                                                  */
+/* Purpose   : CSS code for fieldset and form styling.              */
+/*                                                                  */
+/********************************************************************/
+
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 650px;
+  max-width: 750px;
+  width: 710px;
+}
+
+form fieldset {
+  / * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+form fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+form label {
+	display: block;  /* block float the labels to left column, set a width */
+	float: left;
+	width: 200px;
+	padding: 0;
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right;
+}
+
+form input, form textarea {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+}
+
+form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+textarea { overflow: auto; }
+
+form small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+.form2 {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 750px;
+  max-width: 850px;
+  width: 810px;
+}
+
+.edit_background { background-color: wheat; }
+.edit_legend { background-color: silver; }
+
+.form3 {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  max-width: 250px;
+  width: 210px;
+}
+
+.fieldset2 { background-color: wheat; width: 900px; }
+.legend2 { background-color: silver; }
+
+.label2 {
+    display: block;  /* block float the labels to left column, set a width */
+    float: left;
+    width: 200px;  /* was 200px */
+    padding: 0;
+    margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+    text-align: right;
+    color: black;
+}
+
+.label3 {
+    display: block;  /* block float the labels to left column, set a width */
+    float: left;
+    width: 225px;  /* was 200px */
+    padding: 0;
+    margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+    text-align: right;
+    color: black;
+}
+
+.button_form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font: 100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 20px;
+  max-width: 120px;
+  width: 80px;
+  display: inline;
+}

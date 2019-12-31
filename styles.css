@@ -1,0 +1,194 @@
+/********************************************************************/
+/*                                                                  */
+/* File      : styles.css                                           */
+/*                                                                  */
+/* Author    : Barry Kimelman                                       */
+/*                                                                  */
+/* Created   : June 16, 2012                                        */
+/*                                                                  */
+/* Purpose   : CSS code.                                            */
+/*                                                                  */
+/********************************************************************/
+
+.banner1 {
+	color: darkblue;
+	padding-left: 20px; 
+	padding-right: 20px; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	border: 0px solid black;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#div_banner1 {
+	margin: 2em;
+	text-align: center;
+}
+
+#myform1 {
+	margin: 2em;
+}
+
+a.boldlink2 {
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 20px;
+}
+a.boldlink2:hover {
+  font-weight: 900; text-decoration: none;
+  color: black; background-color: orange;
+}
+
+a.boldlink3 {
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 20px;
+}
+a.boldlink3:hover {
+  text-decoration: none;
+  color: black; font-family: Arial; background-color: peru;
+}
+
+a.boldlink4 {
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 16px;
+}
+a.boldlink4:hover {
+  font-weight: 900; text-decoration: none;
+  color: black; background-color: orange;
+}
+
+input.input_fieldset1 {
+    color: black;
+    background-color: lightblue;  /* lightskyblue */
+    font-size: 16px;
+    font-family: Arial Black, Arial;
+    border: 1px solid black;
+}
+
+.center1 { text-align: center; }
+.bluetext { color: blue; font-weight: bold; font-size: 20px; }
+.bluetext2 { color: blue; font-weight: bold; font-size: 16px; }
+.bluetext3 { color: blue; font-weight: bold; font-size: 24px; }
+.redtext4 { color: red; font-weight: bold; font-size: 20px; }
+.redtext4_silverback { background: silver; color: red; font-weight: bold; font-size: 20px; }
+.redtext5_silverback { color: red; background: silver; }
+.greentext_silverback { color: green; background: silver; }
+
+.padding1 { padding-left: 20px; font-size: 16px; }
+.darktext { font-weight: bold; font-size: 18px; font-family: Arial, Times New Roman; }
+.darktext5 { font-weight: bold; font-size: 14px; font-family: Arial, Times New Roman; }
+.darktext2 { font-weight: 500; font-size: 16px; font-family: Arial, Times New Roman; 
+overflow: visible; padding-left: 20px; padding-right: 20px; }
+.darktext2b { font-weight: 500; font-size: 16px; font-family: Arial, Times New Roman; 
+overflow: visible; padding-left: 20px; padding-right: 20px; width: 275px; }
+.darktext2c { font-weight: bold; font-size: 16px; font-family: Arial, Times New Roman; 
+overflow: visible; padding-left: 20px; padding-right: 20px; width: 325px; background: gainsboro; color: black; }
+.darktext2d { font-weight: bold; font-size: 16px; font-family: Arial, Times New Roman; 
+overflow: visible; padding-left: 20px; padding-right: 20px; width: 375px; background: gainsboro; color: black; }
+.submit1 { font-weight: bold; font-size: 16px; font-family: Arial, Times New Roman; text-decoration: none; width: 250px; }
+.redtext { color: red; font-weight: bold; font-size: 20px; }
+.debugtext { color: brown; font-weight: bold; font-size: 20px; font-family: Courier New, Courier,Arial Black,Arial; }
+.th { font-size: 16px; background-color:#003366; color:#DEDEDE; font-weight:bold; border:1px solid; border-style:outset; text-align:center;}
+.th2 { font-size: 16px; background-color: lightgrey; color: black; font-weight:bold; border:1px solid; border-style:outset; text-align:center; font-family: Arial Black, Arial, Courier New, Courier; }
+.th3 { background-color: #007799; color: #DEDEDE; font-weight: bold; text-align: center; font-size: 28px; }
+.th4 { font-size: 16px; background-color: cornflowerblue; color: black; font-weight:bold; border:1px solid; border-style:outset; text-align:center; font-family: Arial Black, Arial, Courier New, Courier; }
+.bigtext { font-size: 20px; }
+.right1 { text-align: right; }
+.pad_left_center { padding-left: 20px; text-align: center; }
+.pad_left { padding-left: 20px; }
+.pad_left2 { padding-left: 50px; }
+
+/* start tool tip stuff */
+
+a.info {
+    position:relative; /*this is the key*/
+    z-index:24;
+    background-color:#ccc;  /* used to be #ccc */
+    color:#000;
+	font-weight: bold;
+    text-decoration:none;
+}
+
+a.info:hover {
+    z-index:25;
+    font-weight: bold;  /* added by B.K. */
+    background-color:orange;  /* used to be #ff0 */
+}
+
+a.info span {display: none}
+
+a.info:hover span { /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top: 1em; left: 1em; width:18em;    /* used to be top:2em; left:2em; width:15em; */
+    border:2px solid black;  /* used to be 1px solid #0cf */
+    background-color:lightskyblue; color:#000;   /* used to be  #cff #000 */
+    padding:5px 10px;  /* added by B.K. */
+    text-align: center;
+    font-weight: bold;  /* added by B.K. */
+	font-family: Arial Black;  /* added by B.K. */
+}
+
+a.info2 {
+    position:relative; /*this is the key*/
+    z-index:24;
+    color:white;  /* used to be #000 */
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Arial;
+    text-decoration:none;
+}
+
+a.info2:hover {
+    z-index:25;
+    font-weight: bold;  /* added by B.K. */
+    background-color:orange;  /* used to be #ff0 */
+}
+
+a.info2 span {display: none}
+
+a.info2:hover span { /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top: 1em; left: 1em; width:18em;    /* used to be top:2em; left:2em; width:15em; */
+    border:2px solid black;  /* used to be 1px solid #0cf */
+    background-color:lightskyblue; color:#000;   /* used to be  #cff #000 */
+    padding:5px 10px;  /* added by B.K. */
+    text-align: center;
+    font-weight: bold;  /* added by B.K. */
+	font-family: Arial Black;  /* added by B.K. */
+}
+
+a.info3 {
+    position:relative; /*this is the key*/
+    z-index:24;
+    background-color: green;  /* used to be #ccc */
+    color: white;
+	font-weight: bold;
+    text-decoration:none;
+}
+
+a.info3:hover {
+    z-index:25;
+    font-weight: bold;  /* added by B.K. */
+    background-color:orange;  /* used to be #ff0 */
+}
+
+a.info3 span {display: none}
+
+a.info3:hover span { /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top: 1em; left: 1em; width:12em;    /* used to be top:2em; left:2em; width:15em; */
+    border:2px solid black;  /* used to be 1px solid #0cf */
+    background-color:lightskyblue; color:#000;   /* used to be  #cff #000 */
+    padding:5px 10px;  /* added by B.K. */
+    text-align: center;
+    font-weight: bold;  /* added by B.K. */
+	font-family: Arial Black;  /* added by B.K. */
+}
+
+/* end tool tip stuff */
