@@ -46,7 +46,7 @@ func main() {
 	var access_privs []string
 
 	if len(os.Args) < 3 {
-		fmt.Printf("Usage : %s schema username password\n",os.Args[0])
+		fmt.Printf("Usage : %s dbname username password\n",os.Args[0])
 		os.Exit(1)
 	}
 
@@ -55,11 +55,11 @@ func main() {
 	}
 
 // DATABASE_URL looks like postgres://{user}:{password}@{hostname}:{port}/{database-name}
-	schema := os.Args[1]
+	dbname := os.Args[1]
 	username := os.Args[2]
 	password := os.Args[3]
 	fmt.Printf("\nList of Available Databases\n")
-	database_url = fmt.Sprintf("postgres://%s:%s@localhost:5432/%s",username,password,schema)
+	database_url = fmt.Sprintf("postgres://%s:%s@localhost:5432/%s",username,password,dbname)
 
 	conn, err := pgx.Connect(context.Background(), database_url)
 	if err != nil {
