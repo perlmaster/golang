@@ -6,3 +6,4 @@ money.go - format an integer value (number of cents) as a currency with a "S" an
 go-envdump.go - demo program to display CGI script environment
 encrypted.go - a CGI script designed to run under Apache to manage my encrypted data table
 postgres-pgx-showdb-1.go - display a list of available databases under a postgresql server
+postgres-pgx-list-tables-1.go - display a list of tables under a postgresql database
